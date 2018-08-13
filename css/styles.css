@@ -1,0 +1,144 @@
+/* --- eric meyer reset --- */
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section, main {
+		display: block;
+	}
+	body {
+		line-height: 1.5;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/* --- basic styles --- */
+
+body {
+	background: #e5e5cb url('../img/UW2_poop.gif') center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+/* --- homepage --- */
+
+	/* header */
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#pedro-poop {
+		padding-top: 50px;
+		cursor: pointer;
+	}
+
+	.overlay-img img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	}
+
+	.overlay-img:hover img {
+		-webkit-transform: scale(1.15);
+		transform: scale(1.15);
+	}
+
+	/* main */
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	#fly {
+		cursor: pointer;
+	}
+
+	#fly1 {
+		padding-left: 50px;
+		cursor: pointer;
+	}
+
+	#fly2 {
+		padding-right: 50px;
+		cursor: pointer;
+	}
+
+	.move-1 {
+		-webkit-animation: roll-out 1.5s ease-in-out infinite alternate;
+		-moz-animation: roll-out 1.5s ease-in-out infinite alternate;
+		-o-animation: roll-out 1.5s ease-in-out infinite alternate;
+		-ms-animation: roll-out 1.5s ease-in-out infinite alternate;
+		animation: roll-out 1.5s ease-in-out infinite alternate;
+	}
+
+	@-webkit-keyframes roll-out {
+		from {transform: translate(0);}
+		to {transform: translate(900px,-500px);}
+	}
+
+	.move-2 {
+		-webkit-animation: roll-in 2.5s ease-in-out infinite alternate;
+		-moz-animation: roll-in 2.5s ease-in-out infinite alternate;
+		-o-animation: roll-in 2.5s ease-in-out infinite alternate;
+		-ms-animation: roll-in 2.5s ease-in-out infinite alternate;
+		animation: roll-in 2.5s ease-in-out infinite alternate;
+	}
+
+	@-webkit-keyframes roll-in {
+		from {transform: translate(0);}
+		to {transform: translate(-900px, 50px);}
+	}
+
+
+
+
+
+
+
+
+
